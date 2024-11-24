@@ -56,30 +56,54 @@ export default function Skills() {
         </div>
 
         {/* Server */}
-        <div className="flex items-center">
-          <div className="w-36 text-2xl font-bold text-gray-700">Server</div>
-          <div className="flex gap-1">
-            <SkillItem>Express</SkillItem>
-            <SkillItem>Django</SkillItem>
-            <SkillItem>Flask</SkillItem>
-            <SkillItem>ASP .NET Core</SkillItem>
+        <div>
+          <div className="flex items-center">
+            <div className="w-36 text-2xl font-bold text-gray-700">Server</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1">
+                <SkillItem>Express</SkillItem>
+                <SkillItem>Django</SkillItem>
+                <SkillItem>Flask</SkillItem>
+                <SkillItem>ASP .NET Core</SkillItem>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-36"></div>
+            <div className="flex gap-1">
+              {/* <SkillItem>Sequelize</SkillItem>
+              <SkillItem>Mongoose</SkillItem> */}
+              <SkillItem>JWT</SkillItem>
+              <SkillItem>OAuth</SkillItem>
+            </div>
           </div>
         </div>
 
         {/* Database */}
-        <div className="flex items-center">
-          <div className="w-36 text-2xl font-bold text-gray-700">Database</div>
-          <div className="flex gap-1">
-            <SkillItem>MySQL</SkillItem>
-            <SkillItem>MongoDB</SkillItem>
-            <SkillItem>SQLite</SkillItem>
-            <SkillItem>Supabase</SkillItem>
-            <SkillItem>Firebase</SkillItem>
+        <div>
+          <div className="flex items-center">
+            <div className="w-36 text-2xl font-bold text-gray-700">Database</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1">
+                <SkillItem>MySQL</SkillItem>
+                <SkillItem>MongoDB</SkillItem>
+                <SkillItem>SQLite</SkillItem>
+                <SkillItem>Supabase</SkillItem>
+                <SkillItem>Firebase</SkillItem>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-36"></div>
+            <div className="flex gap-1">
+              <SkillItem>Sequelize</SkillItem>
+              <SkillItem>Mongoose</SkillItem>
+            </div>
           </div>
         </div>
 
         {/* UI */}
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
           <div className="flex gap-1">
             <SkillItem>Tailwind CSS</SkillItem>
@@ -87,6 +111,26 @@ export default function Skills() {
             <SkillItem>Styled Components</SkillItem>
             <SkillItem>Bootstrap</SkillItem>
             <SkillItem>MUI</SkillItem>
+          </div>
+        </div> */}
+
+        <div>
+          <div className="flex items-center">
+            <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1">
+                <SkillItem>Tailwind CSS</SkillItem>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-36"></div>
+            <div className="flex gap-1">
+              <SkillItem>SASS</SkillItem>
+              <SkillItem>Styled Components</SkillItem>
+              <SkillItem>Bootstrap</SkillItem>
+              <SkillItem>MUI</SkillItem>
+            </div>
           </div>
         </div>
 
