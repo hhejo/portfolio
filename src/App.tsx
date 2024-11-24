@@ -1,10 +1,10 @@
 import Masthead from './articles/Masthead';
-import Nav from './components/Nav';
+import Header from './articles/Header';
 
 function App() {
   return (
     <>
-      <Nav />
+      <Header />
       <Masthead />
     </>
   );
