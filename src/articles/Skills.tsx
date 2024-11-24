@@ -7,43 +7,51 @@ export default function Skills() {
 
       <div className="flex flex-col gap-4 max-w-4xl">
         {/* Language */}
-        <div className="flex items-center">
-          <div className="w-36 text-2xl font-bold text-gray-700">Language</div>
-          <div className="flex flex-col gap-1">
-            <div className="flex gap-1">
-              <SkillItem>TypeScript</SkillItem>
-              <SkillItem>JavaScript</SkillItem>
-              <SkillItem>Python</SkillItem>
-              <SkillItem>C#</SkillItem>
-              <SkillItem>C</SkillItem>
-              <SkillItem>C++</SkillItem>
-              <SkillItem>Rust</SkillItem>
+        <div>
+          <div className="flex items-center">
+            <div className="w-36 text-2xl font-bold text-gray-700">Language</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1">
+                <SkillItem>TypeScript</SkillItem>
+                <SkillItem>JavaScript</SkillItem>
+                <SkillItem>Python</SkillItem>
+                <SkillItem>C#</SkillItem>
+                <SkillItem>C</SkillItem>
+                <SkillItem>C++</SkillItem>
+              </div>
             </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-36"></div>
             <div className="flex gap-1">
-              <SkillItem>TypeScript</SkillItem>
-              <SkillItem>JavaScript</SkillItem>
-              <SkillItem>Python</SkillItem>
-              <SkillItem>C#</SkillItem>
-              <SkillItem>C</SkillItem>
-              <SkillItem>C++</SkillItem>
               <SkillItem>Rust</SkillItem>
             </div>
           </div>
         </div>
 
         {/* Client */}
-        <div className="flex items-center">
-          <div className="w-36 text-2xl font-bold text-gray-700">Client</div>
-          <div className="flex gap-1">
-            <SkillItem>React</SkillItem>
-            <SkillItem>Next</SkillItem>
-            <SkillItem>React Router</SkillItem>
-            <SkillItem>Redux Toolkit</SkillItem>
-            <SkillItem>Zustand</SkillItem>
-            <SkillItem>TanStack Query</SkillItem>
-            <SkillItem>Vite</SkillItem>
-            <SkillItem>WebPack</SkillItem>
-            <SkillItem>Vue</SkillItem>
+        <div>
+          <div className="flex items-center">
+            <div className="w-36 text-2xl font-bold text-gray-700">Client</div>
+            <div className="flex flex-col gap-1">
+              <div className="flex gap-1">
+                <SkillItem>React</SkillItem>
+                <SkillItem>Next</SkillItem>
+                <SkillItem>Vite</SkillItem>
+                <SkillItem>WebPack</SkillItem>
+                <SkillItem>Vue</SkillItem>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-36"></div>
+            <div className="flex gap-1">
+              <SkillItem>React Router</SkillItem>
+              <SkillItem>Redux Toolkit</SkillItem>
+              <SkillItem>Zustand</SkillItem>
+              <SkillItem>TanStack Query</SkillItem>
+              <SkillItem>Immer</SkillItem>
+            </div>
           </div>
         </div>
 
