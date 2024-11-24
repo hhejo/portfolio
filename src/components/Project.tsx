@@ -17,7 +17,7 @@ export const Project = ({
   githubLink: string;
   serviceLink: string;
 }) => (
-  <div className="flex flex-col max-w-lg p-4 border rounded-xl text-gray-700">
+  <div className="flex flex-col max-w-lg p-8 border rounded-xl text-gray-700">
     <img src={thumbnail} alt="" />
     <div className="flex justify-between items-center w-full">
       <h3 className="text-xl font-bold">{title}</h3>

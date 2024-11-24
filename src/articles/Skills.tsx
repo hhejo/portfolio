@@ -1,4 +1,4 @@
-import { ArticleTitle, SkillItem } from '../components';
+import { ArticleTitle, Badge } from '../components';
 
 export default function Skills() {
   return (
@@ -12,19 +12,19 @@ export default function Skills() {
             <div className="w-36 text-2xl font-bold text-gray-700">Language</div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
-                <SkillItem>TypeScript</SkillItem>
-                <SkillItem>JavaScript</SkillItem>
-                <SkillItem>Python</SkillItem>
-                <SkillItem>C#</SkillItem>
-                <SkillItem>C</SkillItem>
-                <SkillItem>C++</SkillItem>
+                <Badge>TypeScript</Badge>
+                <Badge>JavaScript</Badge>
+                <Badge>Python</Badge>
+                <Badge>C#</Badge>
+                <Badge>C</Badge>
+                <Badge>C++</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-36"></div>
             <ul className="flex gap-1">
-              <SkillItem>Rust</SkillItem>
+              <Badge>Rust</Badge>
             </ul>
           </div>
         </div>
@@ -35,22 +35,22 @@ export default function Skills() {
             <div className="w-36 text-2xl font-bold text-gray-700">Client</div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
-                <SkillItem>React</SkillItem>
-                <SkillItem>Next</SkillItem>
-                <SkillItem>Vite</SkillItem>
-                <SkillItem>WebPack</SkillItem>
-                <SkillItem>Vue</SkillItem>
+                <Badge>React</Badge>
+                <Badge>Next</Badge>
+                <Badge>Vite</Badge>
+                <Badge>WebPack</Badge>
+                <Badge>Vue</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-36"></div>
             <ul className="flex gap-1">
-              <SkillItem>React Router</SkillItem>
-              <SkillItem>Redux Toolkit</SkillItem>
-              <SkillItem>Zustand</SkillItem>
-              <SkillItem>TanStack Query</SkillItem>
-              <SkillItem>Immer</SkillItem>
+              <Badge>React Router</Badge>
+              <Badge>Redux Toolkit</Badge>
+              <Badge>Zustand</Badge>
+              <Badge>TanStack Query</Badge>
+              <Badge>Immer</Badge>
             </ul>
           </div>
         </div>
@@ -61,20 +61,20 @@ export default function Skills() {
             <div className="w-36 text-2xl font-bold text-gray-700">Server</div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
-                <SkillItem>Express</SkillItem>
-                <SkillItem>Django</SkillItem>
-                <SkillItem>Flask</SkillItem>
-                <SkillItem>ASP .NET Core</SkillItem>
+                <Badge>Express</Badge>
+                <Badge>Django</Badge>
+                <Badge>Flask</Badge>
+                <Badge>ASP .NET Core</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-36"></div>
             <ul className="flex gap-1">
-              {/* <SkillItem>Sequelize</SkillItem>
-              <SkillItem>Mongoose</SkillItem> */}
-              <SkillItem>JWT</SkillItem>
-              <SkillItem>OAuth</SkillItem>
+              {/* <Badge>Sequelize</Badge>
+              <Badge>Mongoose</Badge> */}
+              <Badge>JWT</Badge>
+              <Badge>OAuth</Badge>
             </ul>
           </div>
         </div>
@@ -85,19 +85,19 @@ export default function Skills() {
             <div className="w-36 text-2xl font-bold text-gray-700">Database</div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
-                <SkillItem>MySQL</SkillItem>
-                <SkillItem>MongoDB</SkillItem>
-                <SkillItem>SQLite</SkillItem>
-                <SkillItem>Supabase</SkillItem>
-                <SkillItem>Firebase</SkillItem>
+                <Badge>MySQL</Badge>
+                <Badge>MongoDB</Badge>
+                <Badge>SQLite</Badge>
+                <Badge>Supabase</Badge>
+                <Badge>Firebase</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-36"></div>
             <ul className="flex gap-1">
-              <SkillItem>Sequelize</SkillItem>
-              <SkillItem>Mongoose</SkillItem>
+              <Badge>Sequelize</Badge>
+              <Badge>Mongoose</Badge>
             </ul>
           </div>
         </div>
@@ -106,11 +106,11 @@ export default function Skills() {
         {/* <div className="flex items-center">
           <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
           <ul className="flex gap-1">
-            <SkillItem>Tailwind CSS</SkillItem>
-            <SkillItem>SASS</SkillItem>
-            <SkillItem>Styled Components</SkillItem>
-            <SkillItem>Bootstrap</SkillItem>
-            <SkillItem>MUI</SkillItem>
+            <Badge>Tailwind CSS</Badge>
+            <Badge>SASS</Badge>
+            <Badge>Styled Components</Badge>
+            <Badge>Bootstrap</Badge>
+            <Badge>MUI</Badge>
           </ul>
         </div> */}
 
@@ -119,17 +119,17 @@ export default function Skills() {
             <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
-                <SkillItem>Tailwind CSS</SkillItem>
+                <Badge>Tailwind CSS</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
             <div className="w-36"></div>
             <ul className="flex gap-1">
-              <SkillItem>SASS</SkillItem>
-              <SkillItem>Styled Components</SkillItem>
-              <SkillItem>Bootstrap</SkillItem>
-              <SkillItem>MUI</SkillItem>
+              <Badge>SASS</Badge>
+              <Badge>Styled Components</Badge>
+              <Badge>Bootstrap</Badge>
+              <Badge>MUI</Badge>
             </ul>
           </div>
         </div>
