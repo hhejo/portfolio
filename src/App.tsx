@@ -1,8 +1,11 @@
+import Nav from './components/Nav';
+import Masthead from './articles/Masthead';
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl">Hhejo의 포트폴리오</h1>
-      <article>대문</article>
+      <Nav />
+      <Masthead />
       <article>자기소개, 사진</article>
       <article>기술 스택</article>
       <article>아카이브, 링크 모음</article>
