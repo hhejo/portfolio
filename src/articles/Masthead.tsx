@@ -6,7 +6,7 @@ export default function Masthead() {
         <p>개발자 포트폴리오</p>
       </div>
 
-      <hr className="h-1 w-12 bg-sky-400" />
+      <hr className="h-1 w-12 bg-gray-400" />
 
       <div className="flex flex-col justify-center items-center text-xl">
         <p>안녕하세요</p>
@@ -14,7 +14,7 @@ export default function Masthead() {
         <p>함희주입니다.</p>
       </div>
 
-      <button className="w-32 h-12 bg-sky-400 text-white rounded-3xl">더 알아보기</button>
+      <button className="w-32 h-12 bg-gray-600 text-white rounded-3xl">더 알아보기</button>
     </article>
   );
 }

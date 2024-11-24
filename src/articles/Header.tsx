@@ -1,13 +1,14 @@
 export default function Header() {
   return (
     <header className="h-16 flex justify-between items-center px-8">
-      <div className="text-lg font-bold text-gray-900">Hhejo's Portfolio</div>
+      <a href="/" className="text-lg font-bold text-gray-900">
+        HHEJO'S PORTFOLIO
+      </a>
       <nav className="flex gap-6 text-gray-700">
-        <a href="#">About Me</a>
-        <a href="#">Skills</a>
-        <a href="#">Archiving</a>
-        <a href="#">Projects</a>
-        <a href="#">Career</a>
+        <a href="#">ABOUT ME</a>
+        <a href="#">SKILLS</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">CAREER</a>
       </nav>
     </header>
   );
