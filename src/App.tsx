@@ -3,6 +3,7 @@ import Masthead from './articles/Masthead';
 import AboutMe from './articles/AboutMe';
 import Skills from './articles/Skills';
 import Projects from './articles/Projects';
+import Career from './articles/Career';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
+      <Career />
     </>
   );
 }
