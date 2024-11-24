@@ -1,4 +1,4 @@
-import { ArticleTitle } from '../components/ArticleTitle';
+import { ArticleTitle } from '../components';
 
 export default function Projects() {
   return (
