@@ -1,16 +1,6 @@
-import { useState } from 'react';
 import { Badge } from './Badge';
 
-export const Project = ({
-  title,
-  period,
-  subtitle,
-  description,
-  techStack,
-  thumbnail,
-  githubLink,
-  serviceLink,
-}: {
+interface Project {
   title: string;
   period: string;
   subtitle: string;
@@ -19,9 +9,11 @@ export const Project = ({
   thumbnail: string;
   githubLink: string;
   serviceLink: string;
-}) => {
-  const [descs] = useState(description.split(','));
-  const [techs] = useState(techStack.split(','));
+}
+
+export const Project = ({ project }: { project: Project }) => {
+  const { title, period, subtitle, description, techStack, thumbnail, githubLink, serviceLink } =
+    project;
 
   return (
     <div className="flex flex-col gap-4 w-1/2 max-w-lg p-4 border rounded-xl text-gray-700">
@@ -30,6 +22,7 @@ export const Project = ({
         {/* <img className="w-full h-72 rounded-xl overflow-hidden" src={thumbnail} alt="" /> */}
         <div className="w-full h-72 rounded-xl overflow-hidden bg-gray-200"></div>
       </div>
+
       {/* Contents */}
       <div className="flex flex-col gap-1">
         {/* Title, Period */}
@@ -37,21 +30,23 @@ export const Project = ({
           <h3 className="text-xl font-bold">{title}</h3>
           <span className="block text-sm text-gray-400">{period}</span>
         </div>
+
         {/* Subtitle, Description */}
         <div>
           <h4 className="text-lg">{subtitle}</h4>
           <ul className="flex flex-col text-sm">
-            {descs.map((d, i) => (
-              <li key={i}>- {d.trim()}</li>
+            {description.split(',').map((d, i) => (
+              <li key={i}>{d.trim()}</li>
             ))}
           </ul>
         </div>
-        {/* Links, Tech Stacks */}
+
+        {/* GitHub Link, Service Link, Tech Stacks */}
         <div className="flex flex-col gap-0.5 text-sm text-gray-500">
           <span className="block">{githubLink}</span>
           <span className="block">{serviceLink}</span>
           <ul className="flex justify-end gap-1">
-            {techs.map((t, i) => (
+            {techStack.split(',').map((t, i) => (
               <Badge key={i}>{t.trim()}</Badge>
             ))}
           </ul>
