@@ -10,20 +10,160 @@
         "리스트 뷰에서 검색 결과 중 하나를 클릭해 해당 링크로 이동",
         "검색 결과를 CSV 파일로 저장 가능"
       ],
-      "techStack": "C#, Windows Forms",
+      "techStack": ["C#", ".NET", "Windows Forms"],
       "thumbnail": "썸네일 링크",
-      "githubLink": "깃허브 링크",
-      "serviceLink": "배포 서비스 링크"
+      "githubLink": "https://github.com/hhejo/pugayo",
+      "serviceLink": "https://github.com/hhejo/pugayo"
     },
     {
-      "title": "퍼가요 (PuGaYo)",
-      "period": "2024-11, 1주",
-      "subtitle": "C# Windows Forms를 이용한 구글 검색기 데스크탑 앱",
-      "descriptions": ["a", "b"],
-      "techStack": "C#, Windows Forms",
+      "title": "무니 (MooNee)",
+      "period": "2024-10, 1주",
+      "subtitle": "indexedDB를 이용한 가계부 오프라인 웹 앱",
+      "descriptions": [
+        "간단하게 지출·수입 항목을 작성하고 조회",
+        "전체·날짜별·지출별·수입별로 항목 조회",
+        "총 지출·수입·합계 조회",
+        "모든 내역을 CSV 파일로 내보내기"
+      ],
+      "techStack": ["JavaScript", "Vite", "Tailwind CSS"],
       "thumbnail": "썸네일 링크",
-      "githubLink": "깃허브 링크",
-      "serviceLink": "배포 서비스 링크"
+      "githubLink": "https://github.com/hhejo/moonee",
+      "serviceLink": "https://hhejo.github.io/moonee/"
+    },
+    {
+      "title": "코스타 타이머 (KOSTA Timer)",
+      "period": "2024-10, 1주",
+      "subtitle": "날짜와 시간을 지정해 알림을 띄워주는 크롬 확장 프로그램",
+      "descriptions": [
+        "간단하게 지출·수입 항목을 작성하고 조회",
+        "전체·날짜별·지출별·수입별로 항목 조회",
+        "총 지출·수입·합계 조회",
+        "모든 내역을 CSV 파일로 내보내기"
+      ],
+      "techStack": ["JavaScript"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/chrome-timer",
+      "serviceLink": "https://github.com/hhejo/chrome-timer"
+    },
+    {
+      "title": "파이비즈 (PyViz)",
+      "period": "2024-10, 1주",
+      "subtitle": "Selenium, Matplotlib, WordCloud를 이용한 웹 스크래핑, 데이터 시각화",
+      "descriptions": [
+        "Blind의 성격유형 게시판을 크롤링해 게시글 제목, 내용 저장",
+        "어떤 유형의 MBTI가 많이 언급되었는지 16개 MBTI 각각 분석하고 시각화",
+        "E/I, N/S, F/T, J/P 별로 얼마나 언급되었는지 시각화",
+        "WordCloud를 이용해 단어로 표현"
+      ],
+      "techStack": ["Python"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/pyviz",
+      "serviceLink": "https://github.com/hhejo/pyviz"
+    },
+    {
+      "title": "뉴뉴스 (Newnews)",
+      "period": "2024-09, 1주",
+      "subtitle": "알라딘 Open API를 이용한 책 검색 서비스",
+      "descriptions": [
+        "책 신간, 베스트셀러를 목록으로 조회",
+        "제목, 저자, 출판사를 검색해 책 조회",
+        "해당 책의 상세정보 확인 가능",
+        "바로 나오는 신간 확인 가능"
+      ],
+      "techStack": ["TypeScript", "React", "Next", "Vercel", "Express", "Heroku"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/newnews",
+      "serviceLink": "https://newnews-five.vercel.app/"
+    },
+    {
+      "title": "호호밥 (HoHoBoB)",
+      "period": "2024-08, 1주",
+      "subtitle": "가상의 식당 소개 웹 페이지",
+      "descriptions": [
+        "호호밥이라는 가상의 식당을 소개",
+        "어떤 식당인지, 어떤 서비스를 하는지, 이를 위해 어떤 노력을 하는지 소개",
+        "어떤 제품을 제공하는지 보여줌",
+        "서비스 사용자들의 후기를 보여줌"
+      ],
+      "techStack": ["HTML", "CSS", "SASS"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/hohobob",
+      "serviceLink": "https://hhejo.github.io/hohobob/"
+    },
+    {
+      "title": "날씨 기분 일기 (Wea-Emo-Diary)",
+      "period": "2024-08, 1주",
+      "subtitle": "하루의 날씨와 기분을 기록하고 평가하는 모바일 앱",
+      "descriptions": [
+        "오늘의 날씨, 느꼈던 기분을 기록",
+        "전체적인 평가도 추가로 기록",
+        "목록에서 날짜별 기록 확인 가능",
+        "해당 기록을 삭제할 수 있음"
+      ],
+      "techStack": ["Scratch"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/wea-emo-diary",
+      "serviceLink": "https://github.com/hhejo/wea-emo-diary"
+    },
+    {
+      "title": "까마귀 공방 (Crow Studio)",
+      "period": "2022-10 ~ 2022-11, 7주",
+      "subtitle": "온라인 IDE 서비스",
+      "descriptions": [
+        "로컬에 IDE를 설치하지 않고 어디서든 웹 브라우저로 접속해 개발 가능",
+        "팀원들과 함께 Python, Django, Flask, FastAPI를 이용한 코딩·개발 진행",
+        "프로젝트의 디렉터리·파일 관리, 코드 관리",
+        "변수명 추천, 에디터 환경설정, Git 연동, API 테스트, 동시 편집"
+      ],
+      "techStack": ["React", "Redux Toolkit", "React Router", "Firebase", "Tailwind CSS"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/crow-studio-fe",
+      "serviceLink": "https://crow-studio-fe.vercel.app/"
+    },
+    {
+      "title": "아트 호라이즌 (Art Horizon)",
+      "period": "2022-08 ~ 2022-10, 7주",
+      "subtitle": "온라인 미술 관람·전시·추천, AI 이미지 변환 서비스",
+      "descriptions": [
+        "전시된 작품 목록을 탐색하거나, 화가가 되어 작품을 직접 업로드해 전시",
+        "미술관에 있는 것처럼 작품 관람 모드 전환",
+        "작품 업로드 시 AI가 작품을 분석해 태그를 추천",
+        "좋아하는 작품의 스타일로 업로드한 이미지를 AI 스타일링하고 그림의 향 탐색"
+      ],
+      "techStack": ["React", "Redux Toolkit", "React Router", "Firebase", "Tailwind CSS"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/art-horizon-fe",
+      "serviceLink": "https://art-horizon-fe.vercel.app/"
+    },
+    {
+      "title": "러니티 (Learnity)",
+      "period": "2022-07 ~ 2022-08, 7주",
+      "subtitle": "실시간 강의 및 스터디 플랫폼 서비스",
+      "descriptions": [
+        "스터디장이 되어 스터디원 관리 가능",
+        "스터디 일정, 환경 관리",
+        "강의를 올릴 수 있고, 다른 사람의 강의 결제 가능",
+        "실시간으로 화상채팅"
+      ],
+      "techStack": ["React", "Redux Toolkit", "React Router", "Styled Components"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "",
+      "serviceLink": ""
+    },
+    {
+      "title": "디-플렉스 (D-FLEX)",
+      "period": "2022-05, 1주",
+      "subtitle": "영화 검색·추천·리뷰·커뮤니티 서비스",
+      "descriptions": [
+        "카카오 로그인을 통한 유저 관리",
+        "커뮤니티 게시글 관리",
+        "영화를 조회하고 해당 영화에 대한 리뷰 관리",
+        "영화 추천 기능"
+      ],
+      "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "Django"],
+      "thumbnail": "썸네일 링크",
+      "githubLink": "https://github.com/hhejo/D-FLEX",
+      "serviceLink": "https://github.com/hhejo/D-FLEX"
     }
   ]
 }

@@ -5,7 +5,7 @@ interface Project {
   period: string;
   subtitle: string;
   descriptions: string[];
-  techStack: string;
+  techStack: string[];
   thumbnail: string;
   githubLink: string;
   serviceLink: string;
@@ -46,7 +46,7 @@ export const Project = ({ project }: { project: Project }) => {
           <span className="block">{githubLink}</span>
           <span className="block">{serviceLink}</span>
           <ul className="flex justify-end gap-1">
-            {techStack.split(',').map((t, i) => (
+            {techStack.map((t, i) => (
               <Badge key={i}>{t.trim()}</Badge>
             ))}
           </ul>
