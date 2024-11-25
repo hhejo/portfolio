@@ -1,7 +1,7 @@
 export default function Masthead() {
   return (
     <article className="flex flex-col justify-center items-center py-28 bg-gray-200 gap-12">
-      <div className="flex flex-col justify-center items-center gap-4 text-4xl font-bold">
+      <div className="flex flex-col justify-center items-center gap-4 text-4xl font-bold tracking-wider">
         <p>함희주</p>
         <p>개발자 포트폴리오</p>
       </div>
