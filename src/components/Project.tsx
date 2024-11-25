@@ -4,7 +4,7 @@ interface Project {
   title: string;
   period: string;
   subtitle: string;
-  description: string;
+  descriptions: string[];
   techStack: string;
   thumbnail: string;
   githubLink: string;
@@ -12,7 +12,7 @@ interface Project {
 }
 
 export const Project = ({ project }: { project: Project }) => {
-  const { title, period, subtitle, description, techStack, thumbnail, githubLink, serviceLink } =
+  const { title, period, subtitle, descriptions, techStack, thumbnail, githubLink, serviceLink } =
     project;
 
   return (
@@ -35,7 +35,7 @@ export const Project = ({ project }: { project: Project }) => {
         <div>
           <h4 className="text-lg">{subtitle}</h4>
           <ul className="flex flex-col text-sm">
-            {description.split(',').map((d, i) => (
+            {descriptions.map((d, i) => (
               <li key={i}>{d.trim()}</li>
             ))}
           </ul>
