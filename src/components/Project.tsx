@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { Badge } from './Badge';
+
 export const Project = ({
   title,
   period,
@@ -16,21 +19,44 @@ export const Project = ({
   thumbnail: string;
   githubLink: string;
   serviceLink: string;
-}) => (
-  <div className="flex flex-col max-w-lg p-8 border rounded-xl text-gray-700">
-    <img src={thumbnail} alt="" />
-    <div className="flex justify-between items-center w-full">
-      <h3 className="text-xl font-bold">{title}</h3>
-      <span className="block text-sm text-gray-500">{period}</span>
+}) => {
+  const [descs] = useState(description.split(','));
+  const [techs] = useState(techStack.split(','));
+
+  return (
+    <div className="flex flex-col gap-4 w-1/2 max-w-lg p-4 border rounded-xl text-gray-700">
+      {/* Thumbnail */}
+      <div>
+        {/* <img className="w-full h-72 rounded-xl overflow-hidden" src={thumbnail} alt="" /> */}
+        <div className="w-full h-72 rounded-xl overflow-hidden bg-gray-200"></div>
+      </div>
+      {/* Contents */}
+      <div className="flex flex-col gap-1">
+        {/* Title, Period */}
+        <div className="flex justify-between items-center w-full pb-0.5 mb-2 border-b border-gray-300">
+          <h3 className="text-xl font-bold">{title}</h3>
+          <span className="block text-sm text-gray-400">{period}</span>
+        </div>
+        {/* Subtitle, Description */}
+        <div>
+          <h4 className="text-lg">{subtitle}</h4>
+          <ul className="flex flex-col text-sm">
+            {descs.map((d, i) => (
+              <li key={i}>- {d.trim()}</li>
+            ))}
+          </ul>
+        </div>
+        {/* Links, Tech Stacks */}
+        <div className="flex flex-col gap-0.5 text-sm text-gray-500">
+          <span className="block">{githubLink}</span>
+          <span className="block">{serviceLink}</span>
+          <ul className="flex justify-end gap-1">
+            {techs.map((t, i) => (
+              <Badge key={i}>{t.trim()}</Badge>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
-    <h4 className="text-lg font-bold">{subtitle}</h4>
-    <ul>
-      <li>{description}</li>
-    </ul>
-    <ul>
-      <li>{techStack}</li>
-    </ul>
-    <span className="block">{githubLink}</span>
-    <span className="block">{serviceLink}</span>
-  </div>
-);
+  );
+};
