@@ -8,6 +8,7 @@ import {
   faIdCard,
   faUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { ArticleTitle } from '../components';
 
@@ -20,8 +21,8 @@ export default function AboutMe() {
         {/* Name */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faUser} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">Name</h3>
+            <FontAwesomeIcon icon={faUser} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">Name</h3>
           </div>
           <p className="text-gray-600">함희주</p>
         </div>
@@ -29,8 +30,8 @@ export default function AboutMe() {
         {/* Education */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faGraduationCap} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">Education</h3>
+            <FontAwesomeIcon icon={faGraduationCap} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">Education</h3>
           </div>
           <p className="text-gray-600">충북대학교 전자공학부</p>
         </div>
@@ -38,8 +39,8 @@ export default function AboutMe() {
         {/* Email */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faEnvelope} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">Email</h3>
+            <FontAwesomeIcon icon={faEnvelope} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">Email</h3>
           </div>
           <a
             className="text-gray-600 hover:underline hover:text-gray-400 transition-all"
@@ -52,8 +53,8 @@ export default function AboutMe() {
         {/* GitHub */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faGraduationCap} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">GitHub</h3>
+            <FontAwesomeIcon icon={faGithub} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">GitHub</h3>
           </div>
           <a
             className="text-gray-600 hover:underline hover:text-gray-400 transition-all"
@@ -68,8 +69,8 @@ export default function AboutMe() {
         {/* Blog */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faBook} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">Blog</h3>
+            <FontAwesomeIcon icon={faBook} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">Blog</h3>
           </div>
           <a
             className="text-gray-600 hover:underline hover:text-gray-400 transition-all"
@@ -84,8 +85,8 @@ export default function AboutMe() {
         {/* Resume */}
         <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
-            <FontAwesomeIcon icon={faIdCard} size="lg" />
-            <h3 className="text-lg font-bold text-gray-800">Resume</h3>
+            <FontAwesomeIcon icon={faIdCard} size="xl" />
+            <h3 className="text-xl font-bold text-gray-800">Resume</h3>
           </div>
           <a
             className="text-gray-600 hover:underline hover:text-gray-400 transition-all"
