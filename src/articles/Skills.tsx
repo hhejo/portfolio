@@ -1,3 +1,13 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLanguage,
+  faEye,
+  faServer,
+  faDatabase,
+  faPalette,
+  faCloud,
+  faBoxesStacked,
+} from '@fortawesome/free-solid-svg-icons';
 import { ArticleTitle, Badge } from '../components';
 
 export default function Skills() {
@@ -9,7 +19,9 @@ export default function Skills() {
         {/* Language */}
         <div>
           <div className="flex items-center">
-            <div className="w-36 text-2xl font-bold text-gray-700">Language</div>
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faLanguage} size="lg" /> Language
+            </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
                 <Badge>TypeScript</Badge>
@@ -22,7 +34,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-36"></div>
+            <div className="w-48"></div>
             <ul className="flex gap-1">
               <Badge>Rust</Badge>
             </ul>
@@ -32,25 +44,29 @@ export default function Skills() {
         {/* Client */}
         <div>
           <div className="flex items-center">
-            <div className="w-36 text-2xl font-bold text-gray-700">Client</div>
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faEye} size="lg" /> Client
+            </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
+                <Badge>HTML</Badge>
+                <Badge>CSS</Badge>
                 <Badge>React</Badge>
                 <Badge>Next</Badge>
-                <Badge>Vite</Badge>
-                <Badge>WebPack</Badge>
                 <Badge>Vue</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-36"></div>
+            <div className="w-48"></div>
             <ul className="flex gap-1">
-              <Badge>React Router</Badge>
               <Badge>Redux Toolkit</Badge>
               <Badge>Zustand</Badge>
               <Badge>TanStack Query</Badge>
+              <Badge>React Router</Badge>
               <Badge>Immer</Badge>
+              <Badge>Vite</Badge>
+              <Badge>WebPack</Badge>
             </ul>
           </div>
         </div>
@@ -58,23 +74,25 @@ export default function Skills() {
         {/* Server */}
         <div>
           <div className="flex items-center">
-            <div className="w-36 text-2xl font-bold text-gray-700">Server</div>
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faServer} size="lg" /> Server
+            </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
+                <Badge>Node</Badge>
                 <Badge>Express</Badge>
                 <Badge>Django</Badge>
                 <Badge>Flask</Badge>
-                <Badge>ASP .NET Core</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-36"></div>
+            <div className="w-48"></div>
             <ul className="flex gap-1">
-              {/* <Badge>Sequelize</Badge>
-              <Badge>Mongoose</Badge> */}
-              <Badge>JWT</Badge>
-              <Badge>OAuth</Badge>
+              <Badge>Swagger</Badge>
+              <Badge>ASP .NET</Badge>
+              <Badge>FastAPI</Badge>
+              <Badge>NGINX</Badge>
             </ul>
           </div>
         </div>
@@ -82,7 +100,9 @@ export default function Skills() {
         {/* Database */}
         <div>
           <div className="flex items-center">
-            <div className="w-36 text-2xl font-bold text-gray-700">Database</div>
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faDatabase} size="lg" /> Database
+            </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
                 <Badge>MySQL</Badge>
@@ -94,7 +114,7 @@ export default function Skills() {
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-36"></div>
+            <div className="w-48"></div>
             <ul className="flex gap-1">
               <Badge>Sequelize</Badge>
               <Badge>Mongoose</Badge>
@@ -103,28 +123,21 @@ export default function Skills() {
         </div>
 
         {/* UI */}
-        {/* <div className="flex items-center">
-          <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
-          <ul className="flex gap-1">
-            <Badge>Tailwind CSS</Badge>
-            <Badge>SASS</Badge>
-            <Badge>Styled Components</Badge>
-            <Badge>Bootstrap</Badge>
-            <Badge>MUI</Badge>
-          </ul>
-        </div> */}
-
         <div>
           <div className="flex items-center">
-            <div className="w-36 text-2xl font-bold text-gray-700">UI</div>
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faPalette} size="lg" /> UI
+            </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
                 <Badge>Tailwind CSS</Badge>
+                <Badge>SASS</Badge>
+                <Badge>Storybook</Badge>
               </ul>
             </div>
           </div>
           <div className="flex items-center">
-            <div className="w-36"></div>
+            <div className="w-48"></div>
             <ul className="flex gap-1">
               <Badge>SASS</Badge>
               <Badge>Styled Components</Badge>
@@ -134,10 +147,54 @@ export default function Skills() {
           </div>
         </div>
 
-        {/* Deployment */}
+        {/* Deployment ? Infra ? Dev Ops ? Hosting ? */}
+        <div>
+          <div className="flex items-center">
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faCloud} size="lg" /> Deployment
+            </div>
+            <div className="flex flex-col gap-1">
+              <ul className="flex gap-1">
+                <Badge>Vercel</Badge>
+                <Badge>Heroku</Badge>
+                <Badge>AWS</Badge>
+              </ul>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-48"></div>
+            <ul className="flex gap-1">
+              <Badge>Netlify</Badge>
+            </ul>
+          </div>
+        </div>
 
         {/* ETC */}
-        {/* 스웨거 */}
+        <div>
+          <div className="flex items-center">
+            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
+              <FontAwesomeIcon icon={faBoxesStacked} size="lg" /> ETC
+            </div>
+            <div className="flex flex-col gap-1">
+              <ul className="flex gap-1">
+                <Badge>Git</Badge>
+                <Badge>GitHub</Badge>
+                <Badge>VIM</Badge>
+              </ul>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <div className="w-48"></div>
+            <ul className="flex gap-1">
+              <Badge>SASS</Badge>
+              <Badge>Styled Components</Badge>
+              <Badge>Bootstrap</Badge>
+              <Badge>MUI</Badge>
+            </ul>
+          </div>
+        </div>
+
+        {/* VSCode ? PyCharm ? */}
       </div>
 
       {/* Details */}
