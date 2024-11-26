@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="h-16 flex justify-between items-center px-8">
+    <header className="h-16 w-full flex justify-between items-center px-8">
       <a href="/" className="text-xl font-bold text-gray-900">
         HHEJO'S PORTFOLIO
       </a>

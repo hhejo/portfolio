@@ -13,7 +13,7 @@ import { ArticleTitle } from '../components';
 
 export default function AboutMe() {
   return (
-    <article className="flex flex-col justify-center items-center py-32 gap-12">
+    <article className="w-full flex flex-col justify-center items-center py-32 gap-12">
       <ArticleTitle>ABOUT ME</ArticleTitle>
 
       <div className="flex justify-center items-center flex-wrap max-w-4xl gap-16">
