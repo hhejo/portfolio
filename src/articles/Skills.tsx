@@ -12,7 +12,7 @@ import { ArticleTitle, Badge } from '../components';
 
 export default function Skills() {
   return (
-    <article className="flex flex-col justify-center items-center py-28 gap-12 bg-gray-200">
+    <article className="flex flex-col justify-center items-center py-32 gap-12 bg-gray-200">
       <ArticleTitle>SKILLS</ArticleTitle>
 
       <div className="flex flex-col gap-4 max-w-4xl">
