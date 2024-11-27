@@ -2,14 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUser,
   faEnvelope,
-  faAt,
   faGraduationCap,
   faBook,
   faIdCard,
-  faUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { ArticleTitle } from '../components';
+import { ArticleTitle, Info } from '../components';
 
 export default function AboutMe() {
   return (
@@ -18,25 +16,31 @@ export default function AboutMe() {
 
       <div className="flex justify-center items-center flex-wrap max-w-4xl gap-16">
         {/* Name */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faUser} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">Name</h3>
           </div>
           <p className="text-gray-500">함희주</p>
-        </div>
+        </div> */}
+        <Info category="Name" content="함희주" link="">
+          <FontAwesomeIcon icon={faUser} size="lg" />
+        </Info>
 
         {/* Education */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faGraduationCap} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">Education</h3>
           </div>
           <p className="text-gray-500">충북대학교 전자공학부</p>
-        </div>
+        </div> */}
+        <Info category="Education" content="충북대학교 전자공학부" link="">
+          <FontAwesomeIcon icon={faGraduationCap} size="lg" />
+        </Info>
 
         {/* Email */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faEnvelope} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">Email</h3>
@@ -47,10 +51,13 @@ export default function AboutMe() {
           >
             <FontAwesomeIcon icon={faAt} size="sm" /> litsmainjof
           </a>
-        </div>
+        </div> */}
+        <Info category="Email" content="litsmainjof@gmail.com" link="mailto:litsmainjof@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" />
+        </Info>
 
         {/* GitHub */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faGithub} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">GitHub</h3>
@@ -63,10 +70,13 @@ export default function AboutMe() {
           >
             Hhejo의 깃허브 <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
           </a>
-        </div>
+        </div> */}
+        <Info category="GitHub" content="Hhejo의 깃허브" link="https://github.com/hhejo">
+          <FontAwesomeIcon icon={faGithub} size="lg" />
+        </Info>
 
         {/* Blog */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faBook} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">Blog</h3>
@@ -79,10 +89,13 @@ export default function AboutMe() {
           >
             Hhejo의 블로그 <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
           </a>
-        </div>
+        </div> */}
+        <Info category="Blog" content="Hhejo의 학습 블로그" link="https://hhejo.github.io">
+          <FontAwesomeIcon icon={faBook} size="lg" />
+        </Info>
 
         {/* Resume */}
-        <div className="flex flex-col justify-center items-center gap-2 w-56">
+        {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
             <FontAwesomeIcon icon={faIdCard} size="lg" />
             <h3 className="text-xl font-bold text-gray-800">Resume</h3>
@@ -95,13 +108,14 @@ export default function AboutMe() {
           >
             함희주의 이력서 <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" />
           </a>
-        </div>
-
-        {/* <Info title="Email" content="litsmainjof@gmail.com" />
-        <Info title="Education" content="충북대학교 전자공학부" />
-        <Info title="GitHub" content="github.com/hhejo" />
-        <Info title="Blog" content="hhejo.github.io" />
-        <Info title="Resume" content="노션링크예정" /> */}
+        </div> */}
+        <Info
+          category="Resume"
+          content="함희주의 이력서"
+          link="https://www.notion.so/479338ef915044d88328b7a65198bab7"
+        >
+          <FontAwesomeIcon icon={faIdCard} size="lg" />
+        </Info>
       </div>
     </article>
   );
