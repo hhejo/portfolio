@@ -7,7 +7,7 @@
       "isTeam": false,
       "descriptions": ["1", "2", "3", "4"],
       "techStack": ["TypeScript", "React", "Vite", "Tailwind CSS"],
-      "src": "/images/portfolio.png",
+      "src": "./images/portfolio.png",
       "alt": "포트폴리오 (Portfolio) 썸네일",
       "githubLink": "https://github.com/hhejo/portfolio",
       "serviceLink": "https://hhejo.github.io/portfolio"
@@ -24,7 +24,7 @@
         "검색 결과를 CSV 파일로 저장 가능"
       ],
       "techStack": ["C#", ".NET", "Windows Forms"],
-      "src": "/images/pugayo.png",
+      "src": "./images/pugayo.png",
       "alt": "퍼가요 (PuGaYo) 썸네일",
       "githubLink": "https://github.com/hhejo/pugayo",
       "serviceLink": "https://github.com/hhejo/pugayo"
@@ -41,7 +41,7 @@
         "모든 내역을 CSV 파일로 내보내기"
       ],
       "techStack": ["JavaScript", "Vite", "Tailwind CSS"],
-      "src": "/images/moonee.png",
+      "src": "./images/moonee.png",
       "alt": "무니 (MooNee) 썸네일",
       "githubLink": "https://github.com/hhejo/moonee",
       "serviceLink": "https://hhejo.github.io/moonee/"
@@ -58,7 +58,7 @@
         "모든 내역을 CSV 파일로 내보내기"
       ],
       "techStack": ["JavaScript"],
-      "src": "/images/kosta-timer.png",
+      "src": "./images/kosta-timer.png",
       "alt": "코스타 타이머 (KOSTA Timer) 썸네일",
       "githubLink": "https://github.com/hhejo/chrome-timer",
       "serviceLink": "https://chromewebstore.google.com/detail/kosta-timer/helppnekbooonbajcomnekjicpoaoifd?hl=ko&utm_source=ext_sidebar"
@@ -75,7 +75,7 @@
         "E/I, N/S, F/T, J/P 별로 얼마나 언급되었는지 시각화"
       ],
       "techStack": ["Python"],
-      "src": "/images/pyviz.png",
+      "src": "./images/pyviz.png",
       "alt": "파이비즈 (PyViz) 썸네일",
       "githubLink": "https://github.com/hhejo/pyviz",
       "serviceLink": "https://github.com/hhejo/pyviz"
@@ -92,7 +92,7 @@
         "바로 나오는 신간 확인 가능"
       ],
       "techStack": ["TypeScript", "React", "Next", "Vercel", "Express", "Heroku"],
-      "src": "/images/newnews.png",
+      "src": "./images/newnews.png",
       "alt": "뉴뉴스 (Newnews) 썸네일",
       "githubLink": "https://github.com/hhejo/newnews",
       "serviceLink": "https://newnews-hee.vercel.app/books"
@@ -109,7 +109,7 @@
         "서비스 사용자들의 후기를 보여줌"
       ],
       "techStack": ["HTML", "CSS", "SASS"],
-      "src": "/images/hohobob.png",
+      "src": "./images/hohobob.png",
       "alt": "호호밥 (HoHoBoB) 썸네일",
       "githubLink": "https://github.com/hhejo/hohobob",
       "serviceLink": "https://hhejo.github.io/hohobob/"
@@ -126,7 +126,7 @@
         "해당 기록을 삭제할 수 있음"
       ],
       "techStack": ["Scratch"],
-      "src": "/images/wea-emo-diary.png",
+      "src": "./images/wea-emo-diary.png",
       "alt": "날씨 기분 일기 (Wea-Emo-Diary) 썸네일",
       "githubLink": "https://github.com/hhejo/wea-emo-diary",
       "serviceLink": "https://github.com/hhejo/wea-emo-diary"
@@ -143,7 +143,7 @@
         "변수명 추천, 에디터 환경설정, Git 연동, API 테스트, 동시 편집"
       ],
       "techStack": ["React", "Redux Toolkit", "React Router", "Firebase", "Tailwind CSS"],
-      "src": "/images/crow-studio.png",
+      "src": "./images/crow-studio.png",
       "alt": "까마귀 공방 (Crow Studio) 썸네일",
       "githubLink": "https://github.com/hhejo/crow-studio-fe",
       "serviceLink": "https://crow-studio-fe.vercel.app/"
@@ -160,7 +160,7 @@
         "좋아하는 작품의 스타일로 업로드한 이미지를 AI 스타일링하고 그림의 향 탐색"
       ],
       "techStack": ["React", "Redux Toolkit", "React Router", "Firebase", "Tailwind CSS"],
-      "src": "/images/art-horizon.png",
+      "src": "./images/art-horizon.png",
       "alt": "아트 호라이즌 (Art Horizon) 썸네일",
       "githubLink": "https://github.com/hhejo/art-horizon-fe",
       "serviceLink": "https://art-horizon-fe.vercel.app/"
@@ -177,7 +177,7 @@
         "실시간으로 화상채팅"
       ],
       "techStack": ["React", "Redux Toolkit", "React Router", "Styled Components"],
-      "src": "/images/learnity.png",
+      "src": "./images/learnity.png",
       "alt": "러니티 (Learnity) 썸네일",
       "githubLink": "",
       "serviceLink": ""
@@ -194,7 +194,7 @@
         "영화 추천 기능"
       ],
       "techStack": ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "Django"],
-      "src": "/images/d-flex.png",
+      "src": "./images/d-flex.png",
       "alt": "디-플렉스 (D-FLEX) 썸네일",
       "githubLink": "https://github.com/hhejo/D-FLEX",
       "serviceLink": "https://github.com/hhejo/D-FLEX"
