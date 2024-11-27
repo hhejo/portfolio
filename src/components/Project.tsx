@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {  } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Badge } from './Badge';
+// import pugayoThumbnail from '../../public/images/pugayo.png';
 
 interface Project {
   title: string;
@@ -9,21 +10,22 @@ interface Project {
   subtitle: string;
   descriptions: string[];
   techStack: string[];
-  thumbnail: string;
+  src: string;
+  alt: string;
   githubLink: string;
   serviceLink: string;
 }
 
 export const Project = ({ project }: { project: Project }) => {
-  const { title, period, subtitle, descriptions, techStack, thumbnail, githubLink, serviceLink } =
+  const { title, period, subtitle, descriptions, techStack, src, alt, githubLink, serviceLink } =
     project;
 
   return (
     <div className="flex flex-col gap-4 w-1/2 max-w-lg p-4 border rounded-xl text-gray-700">
       {/* Thumbnail */}
       <div>
-        {/* <img className="w-full h-72 rounded-xl overflow-hidden" src={thumbnail} alt="" /> */}
-        <div className="w-full h-72 rounded-xl overflow-hidden bg-gray-200"></div>
+        <img className="w-full h-72 rounded-xl overflow-hidden" src={src} alt={alt} />
+        {/* <div className="w-full h-72 rounded-xl overflow-hidden bg-gray-200"></div> */}
       </div>
 
       {/* Contents */}
@@ -37,9 +39,11 @@ export const Project = ({ project }: { project: Project }) => {
         {/* Subtitle, Description */}
         <div>
           <h4 className="text-lg">{subtitle}</h4>
-          <ul className="flex flex-col text-sm">
+          <ul className="flex flex-col text-sm pl-2">
             {descriptions.map((d, i) => (
-              <li key={i}>{d.trim()}</li>
+              <li className="" key={i}>
+                · {d.trim()}
+              </li>
             ))}
           </ul>
         </div>
@@ -47,20 +51,28 @@ export const Project = ({ project }: { project: Project }) => {
         {/* GitHub Link, Service Link, Tech Stacks */}
         <div className="flex flex-col gap-3 text-sm text-gray-500">
           <div>
-            <span className="block flex items-center gap-1">
+            <span className="flex items-center gap-1">
               <FontAwesomeIcon icon={faGithub} />
-              {githubLink}
-              <a>PyViz</a>
               <a
-                className="text-gray-600 hover:underline hover:text-gray-400 transition-all"
-                href="https://github.com/hhejo"
+                className="text-gray-400 hover:underline hover:text-gray-400 transition-all"
+                href={`${githubLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* Hhejo의 깃허브 <FontAwesomeIcon icon={faUpRightFromSquare} size="xs" /> */}
+                {title}
               </a>
             </span>
-            <span className="block">{serviceLink}</span>
+            <span className="flex items-center">
+              <FontAwesomeIcon icon={faLink} />
+              <a
+                className="text-gray-400 hover:underline hover:text-gray-400 transition-all"
+                href={`${serviceLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                서비스 링크
+              </a>
+            </span>
           </div>
           <ul className="flex justify-end gap-1">
             {techStack.map((t, i) => (
