@@ -89,7 +89,7 @@ export default function AboutMe() {
           </div>
           <a
             className="text-gray-500 hover:underline hover:text-gray-400 transition-all"
-            href="#"
+            href="https://www.notion.so/479338ef915044d88328b7a65198bab7"
             target="_blank"
             rel="noopener noreferrer"
           >
