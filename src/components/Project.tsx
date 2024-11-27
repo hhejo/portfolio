@@ -8,6 +8,7 @@ interface Project {
   title: string;
   period: string;
   subtitle: string;
+  isTeam: boolean;
   descriptions: string[];
   techStack: string[];
   src: string;
@@ -17,29 +18,45 @@ interface Project {
 }
 
 export const Project = ({ project }: { project: Project }) => {
-  const { title, period, subtitle, descriptions, techStack, src, alt, githubLink, serviceLink } =
-    project;
+  const {
+    title,
+    period,
+    subtitle,
+    isTeam,
+    descriptions,
+    techStack,
+    src,
+    alt,
+    githubLink,
+    serviceLink,
+  } = project;
 
   return (
-    <div className="flex flex-col gap-4 w-1/2 max-w-lg p-4 border rounded-xl text-gray-700">
+    <div className="flex flex-col gap-4 w-1/2 max-w-lg p-4 rounded-xl shadow-md text-gray-700 bg-white">
       {/* Thumbnail */}
       <div>
-        <img className="w-full h-72 rounded-xl overflow-hidden" src={src} alt={alt} />
-        {/* <div className="w-full h-72 rounded-xl overflow-hidden bg-gray-200"></div> */}
+        <img
+          className="w-full h-72 rounded-xl overflow-hidden object-cover bg-gray-200"
+          src={src}
+          alt={alt}
+        />
       </div>
 
       {/* Contents */}
       <div className="flex flex-col gap-1">
         {/* Title, Period */}
-        <div className="flex justify-between items-center w-full pb-0.5 mb-2 border-b border-gray-300">
-          <h3 className="text-xl font-bold">{title}</h3>
+        <div className="flex justify-between items-center pb-0.5 mb-2 border-b border-gray-300">
+          <h3 className="text-2xl font-bold">{title}</h3>
           <span className="block text-sm text-gray-400">{period}</span>
         </div>
 
         {/* Subtitle, Description */}
         <div>
-          <h4 className="text-lg">{subtitle}</h4>
-          <ul className="flex flex-col text-sm pl-2">
+          <div className="flex justify-between items-center">
+            <h4 className="text-lg font-bold text-gray-500">{subtitle}</h4>
+            <Badge team={isTeam}>{isTeam ? '팀' : '개인'}</Badge>
+          </div>
+          <ul className="flex flex-col text-sm text-gray-600 p-1">
             {descriptions.map((d, i) => (
               <li className="" key={i}>
                 · {d.trim()}
@@ -50,26 +67,27 @@ export const Project = ({ project }: { project: Project }) => {
 
         {/* GitHub Link, Service Link, Tech Stacks */}
         <div className="flex flex-col gap-3 text-sm text-gray-500">
-          <div>
+          <div className="flex flex-col gap-px">
             <span className="flex items-center gap-1">
-              <FontAwesomeIcon icon={faGithub} />
               <a
-                className="text-gray-400 hover:underline hover:text-gray-400 transition-all"
+                className="flex gap-2 items-center border-b border-b-white hover:border-b hover:border-b-gray-400 transition-all"
                 href={`${githubLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <FontAwesomeIcon icon={faGithub} />
                 {title}
               </a>
             </span>
             <span className="flex items-center">
-              <FontAwesomeIcon icon={faLink} />
               <a
-                className="text-gray-400 hover:underline hover:text-gray-400 transition-all"
+                // className="text-gray-400 hover:underline hover:text-gray-400 transition-all"
+                className="flex gap-1 items-center border-b border-b-white hover:border-b hover:border-b-gray-400 transition-all"
                 href={`${serviceLink}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <FontAwesomeIcon icon={faLink} />
                 서비스 링크
               </a>
             </span>
