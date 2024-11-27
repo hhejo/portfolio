@@ -14,7 +14,7 @@ export default function AboutMe() {
     <article className="w-full flex flex-col justify-center items-center py-32 gap-12">
       <ArticleTitle>ABOUT ME</ArticleTitle>
 
-      <div className="flex justify-center items-center flex-wrap max-w-4xl gap-16">
+      <div className="flex justify-center items-center flex-wrap max-w-4xl gap-10 p-8">
         {/* Name */}
         {/* <div className="flex flex-col justify-center items-center gap-2 w-56">
           <div className="flex justify-center items-center gap-2">
@@ -23,7 +23,7 @@ export default function AboutMe() {
           </div>
           <p className="text-gray-500">함희주</p>
         </div> */}
-        <Info category="Name" content="함희주" link="">
+        <Info category="Name" content="함희주">
           <FontAwesomeIcon icon={faUser} size="lg" />
         </Info>
 
@@ -35,7 +35,7 @@ export default function AboutMe() {
           </div>
           <p className="text-gray-500">충북대학교 전자공학부</p>
         </div> */}
-        <Info category="Education" content="충북대학교 전자공학부" link="">
+        <Info category="Education" content="충북대학교 전자공학부">
           <FontAwesomeIcon icon={faGraduationCap} size="lg" />
         </Info>
 

@@ -5,16 +5,15 @@ export const Info = ({
   children,
   category,
   content,
-  link,
+  link = '',
 }: {
   children: JSX.Element;
   category: string;
   content: string;
-  link: string;
+  link?: string;
 }) => (
-  <div className="flex flex-col justify-center items-center gap-2 w-56">
+  <div className="flex flex-col justify-center items-center gap-2 w-48">
     <div className="flex justify-center items-center gap-2">
-      {/* <FontAwesomeIcon icon={faGithub} size="lg" /> */}
       {children}
       <h3 className="text-xl font-bold text-gray-700">{category}</h3>
     </div>
