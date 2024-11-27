@@ -4,6 +4,7 @@
       "title": "포트폴리오 (Portfolio)",
       "period": "2024/11 · 1주",
       "subtitle": "개인 포트폴리오 웹 페이지",
+      "isTeam": false,
       "descriptions": ["1", "2", "3", "4"],
       "techStack": ["TypeScript", "React", "Vite", "Tailwind CSS"],
       "src": "/images/portfolio.png",
@@ -15,6 +16,7 @@
       "title": "퍼가요 (PuGaYo)",
       "period": "2024/11 · 1주",
       "subtitle": "C# Windows Forms를 이용한 구글 검색기 데스크탑 앱",
+      "isTeam": false,
       "descriptions": [
         "구글 검색을 했을 때, 한 번에 리스트 뷰로 결과 확인",
         "PuppeteerSharp로 구글 검색 결과 스크래핑",
@@ -31,6 +33,7 @@
       "title": "무니 (MooNee)",
       "period": "2024/10 · 1주",
       "subtitle": "indexedDB를 이용한 가계부 오프라인 웹 앱",
+      "isTeam": false,
       "descriptions": [
         "간단하게 지출·수입 항목을 작성하고 조회",
         "전체·날짜별·지출별·수입별로 항목 조회",
@@ -47,6 +50,7 @@
       "title": "코스타 타이머 (KOSTA Timer)",
       "period": "2024/10 · 1주",
       "subtitle": "날짜와 시간을 지정해 알림을 띄워주는 크롬 확장 프로그램",
+      "isTeam": false,
       "descriptions": [
         "간단하게 지출·수입 항목을 작성하고 조회",
         "전체·날짜별·지출별·수입별로 항목 조회",
@@ -63,6 +67,7 @@
       "title": "파이비즈 (PyViz)",
       "period": "2024/10 · 1주",
       "subtitle": "웹 스크래핑, 데이터 시각화",
+      "isTeam": false,
       "descriptions": [
         "Selenium, Matplotlib, WordCloud를 사용",
         "Blind의 성격유형 게시판을 크롤링해 게시글 제목, 내용 저장",
@@ -79,6 +84,7 @@
       "title": "뉴뉴스 (Newnews)",
       "period": "2024/09 · 1주",
       "subtitle": "알라딘 Open API를 이용한 책 검색 서비스",
+      "isTeam": false,
       "descriptions": [
         "책 신간, 베스트셀러를 목록으로 조회",
         "제목, 저자, 출판사를 검색해 책 조회",
@@ -95,6 +101,7 @@
       "title": "호호밥 (HoHoBoB)",
       "period": "2024/08 · 1주",
       "subtitle": "가상의 식당 소개 웹 페이지",
+      "isTeam": false,
       "descriptions": [
         "호호밥이라는 가상의 식당을 소개",
         "어떤 식당인지, 어떤 서비스를 하는지, 이를 위해 어떤 노력을 하는지 소개",
@@ -111,6 +118,7 @@
       "title": "날씨 기분 일기 (Wea-Emo-Diary)",
       "period": "2024/08 · 1주",
       "subtitle": "하루의 날씨와 기분을 기록하고 평가하는 모바일 앱",
+      "isTeam": false,
       "descriptions": [
         "오늘의 날씨, 느꼈던 기분을 기록",
         "전체적인 평가도 추가로 기록",
@@ -127,6 +135,7 @@
       "title": "까마귀 공방 (Crow Studio)",
       "period": "2022/10 ~ 11 · 7주",
       "subtitle": "온라인 IDE 서비스",
+      "isTeam": true,
       "descriptions": [
         "로컬에 IDE를 설치하지 않고 어디서든 웹 브라우저로 접속해 개발 가능",
         "팀원들과 함께 Python, Django, Flask, FastAPI를 이용한 코딩·개발 진행",
@@ -143,6 +152,7 @@
       "title": "아트 호라이즌 (Art Horizon)",
       "period": "2022/08 ~ 10 · 7주",
       "subtitle": "온라인 미술 관람·전시·추천, AI 이미지 변환 서비스",
+      "isTeam": true,
       "descriptions": [
         "전시된 작품 목록을 탐색하거나, 화가가 되어 작품을 직접 업로드해 전시",
         "미술관에 있는 것처럼 작품 관람 모드 전환",
@@ -159,6 +169,7 @@
       "title": "러니티 (Learnity)",
       "period": "2022/07 ~ 08 · 7주",
       "subtitle": "실시간 강의 및 스터디 플랫폼 서비스",
+      "isTeam": true,
       "descriptions": [
         "스터디장이 되어 스터디원 관리 가능",
         "스터디 일정, 환경 관리",
@@ -175,6 +186,7 @@
       "title": "디-플렉스 (D-FLEX)",
       "period": "2022/05 · 1주",
       "subtitle": "영화 검색·추천·리뷰·커뮤니티 서비스",
+      "isTeam": true,
       "descriptions": [
         "카카오 로그인을 통한 유저 관리",
         "커뮤니티 게시글 관리",
