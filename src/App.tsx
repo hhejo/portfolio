@@ -19,7 +19,7 @@ function App() {
       <Masthead />
       <AboutMe />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
       <Career />
     </>
   );
