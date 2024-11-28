@@ -1,0 +1,22 @@
+{
+  "language": ["TypeScript", "JavaScript", "Python", "C#", "C", "C++", "Rust"],
+  "client": [
+    "HTML",
+    "CSS",
+    "React",
+    "Next",
+    "Vue",
+    "Redux Toolkit",
+    "Zustand",
+    "TanStack Query",
+    "React Router",
+    "Immer",
+    "Vite",
+    "WebPack"
+  ],
+  "server": [],
+  "database": [],
+  "ui": [],
+  "devops": [],
+  "etc": []
+}
