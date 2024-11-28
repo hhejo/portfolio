@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Header, Masthead, AboutMe, Skills, Projects, Career } from './articles';
+import { Header, Masthead, AboutMe, Skills, Career } from './articles';
 
 // import Header from './articles/Header';
 // import Masthead from './articles/Masthead';
