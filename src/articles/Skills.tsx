@@ -1,78 +1,52 @@
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLanguage,
   faEye,
-  faServer,
-  faDatabase,
-  faPalette,
-  faCloud,
-  faBoxesStacked,
+  // faServer,
+  // faDatabase,
+  // faPalette,
+  // faCloud,
+  // faBoxesStacked,
 } from '@fortawesome/free-solid-svg-icons';
 import { ArticleTitle, Badge } from '../components';
+import skillsData from '../assets/skills-data.json';
 
 export default function Skills() {
+  const [language] = useState(skillsData.language);
+  const [client] = useState(skillsData.client);
+
   return (
     <article className="w-full flex flex-col justify-center items-center py-32 gap-12 bg-gray-200">
       <ArticleTitle>SKILLS</ArticleTitle>
 
-      <div className="flex flex-col gap-4 max-w-4xl">
+      <div className="flex flex-col gap-4 max-w-2xl px-2">
         {/* Language */}
-        <div>
-          <div className="flex items-center">
-            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
-              <FontAwesomeIcon icon={faLanguage} size="lg" /> Language
-            </div>
-            <div className="flex flex-col gap-1">
-              <ul className="flex gap-1">
-                <Badge>TypeScript</Badge>
-                <Badge>JavaScript</Badge>
-                <Badge>Python</Badge>
-                <Badge>C#</Badge>
-                <Badge>C</Badge>
-                <Badge>C++</Badge>
-              </ul>
-            </div>
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex items-center gap-2 text-2xl font-bold text-gray-700">
+            <FontAwesomeIcon icon={faLanguage} size="lg" /> Language
           </div>
-          <div className="flex items-center">
-            <div className="w-48"></div>
-            <ul className="flex gap-1">
-              <Badge>Rust</Badge>
-            </ul>
-          </div>
+          <ul className="w-full flex justify-center items-center flex-wrap gap-1 p-2 rounded-lg bg-white">
+            {language.map((l) => (
+              <Badge>{l}</Badge>
+            ))}
+          </ul>
         </div>
 
         {/* Client */}
-        <div>
-          <div className="flex items-center">
-            <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
-              <FontAwesomeIcon icon={faEye} size="lg" /> Client
-            </div>
-            <div className="flex flex-col gap-1">
-              <ul className="flex gap-1">
-                <Badge>HTML</Badge>
-                <Badge>CSS</Badge>
-                <Badge>React</Badge>
-                <Badge>Next</Badge>
-                <Badge>Vue</Badge>
-              </ul>
-            </div>
+        <div className="flex flex-col items-center gap-3">
+          <div className="flex items-center gap-2 text-2xl font-bold text-gray-700">
+            <FontAwesomeIcon icon={faEye} size="lg" /> Client
           </div>
-          <div className="flex items-center">
-            <div className="w-48"></div>
-            <ul className="flex gap-1">
-              <Badge>Redux Toolkit</Badge>
-              <Badge>Zustand</Badge>
-              <Badge>TanStack Query</Badge>
-              <Badge>React Router</Badge>
-              <Badge>Immer</Badge>
-              <Badge>Vite</Badge>
-              <Badge>WebPack</Badge>
-            </ul>
-          </div>
+          <ul className="w-full flex justify-center items-center flex-wrap gap-1 p-2 rounded-lg bg-white">
+            {client.map((c) => (
+              <Badge>{c}</Badge>
+            ))}
+          </ul>
         </div>
 
         {/* Server */}
-        <div>
+        {/* <div>
           <div className="flex items-center">
             <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
               <FontAwesomeIcon icon={faServer} size="lg" /> Server
@@ -95,10 +69,10 @@ export default function Skills() {
               <Badge>NGINX</Badge>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* Database */}
-        <div>
+        {/* <div>
           <div className="flex items-center">
             <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
               <FontAwesomeIcon icon={faDatabase} size="lg" /> Database
@@ -120,10 +94,10 @@ export default function Skills() {
               <Badge>Mongoose</Badge>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* UI */}
-        <div>
+        {/* <div>
           <div className="flex items-center">
             <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
               <FontAwesomeIcon icon={faPalette} size="lg" /> UI
@@ -145,13 +119,13 @@ export default function Skills() {
               <Badge>MUI</Badge>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* Deployment ? Infra ? Dev Ops ? Hosting ? */}
-        <div>
+        {/* <div>
           <div className="flex items-center">
             <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
-              <FontAwesomeIcon icon={faCloud} size="lg" /> Deployment
+              <FontAwesomeIcon icon={faCloud} size="lg" /> DevOps
             </div>
             <div className="flex flex-col gap-1">
               <ul className="flex gap-1">
@@ -167,10 +141,10 @@ export default function Skills() {
               <Badge>Netlify</Badge>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* ETC */}
-        <div>
+        {/* <div>
           <div className="flex items-center">
             <div className="flex items-center gap-2 w-48 text-2xl font-bold text-gray-700">
               <FontAwesomeIcon icon={faBoxesStacked} size="lg" /> ETC
@@ -192,7 +166,7 @@ export default function Skills() {
               <Badge>MUI</Badge>
             </ul>
           </div>
-        </div>
+        </div> */}
 
         {/* VSCode ? PyCharm ? */}
       </div>
