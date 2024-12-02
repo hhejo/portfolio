@@ -5,14 +5,12 @@
     "CSS",
     "React",
     "Next",
-    "Vue",
     "Redux Toolkit",
     "Zustand",
-    "TanStack Query",
     "React Router",
-    "Immer",
     "Vite",
-    "WebPack"
+    "WebPack",
+    "Vue"
   ],
   "server": [],
   "database": [],
