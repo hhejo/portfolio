@@ -125,7 +125,7 @@
         "목록에서 날짜별 기록 확인 가능",
         "해당 기록을 삭제할 수 있음"
       ],
-      "techStack": ["Scratch"],
+      "techStack": ["App Inventor"],
       "src": "./images/wea-emo-diary.png",
       "alt": "날씨 기분 일기 (Wea-Emo-Diary) 썸네일",
       "githubLink": "https://github.com/hhejo/wea-emo-diary",
