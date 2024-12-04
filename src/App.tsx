@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Header, Masthead, AboutMe, Skills, Projects, Career } from './articles';
 
 // import Header from './articles/Header';
@@ -9,10 +8,6 @@ import { Header, Masthead, AboutMe, Skills, Projects, Career } from './articles'
 // import Career from './articles/Career';
 
 function App() {
-  useEffect(() => {
-    // library.add(faCamera);
-  }, []);
-
   return (
     <>
       <Header />
