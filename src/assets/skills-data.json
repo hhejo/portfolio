@@ -13,7 +13,7 @@
     "Vue"
   ],
   "server": ["Node", "Express", "Django", "Flask"],
-  "database": ["MongoDB", "MySQL", "SQLite"],
+  "database": ["MongoDB", "MySQL", "SQLite", "Supabase", "Firebase"],
   "ui": [],
   "devops": [],
   "etc": []
