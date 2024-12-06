@@ -14,7 +14,7 @@
   ],
   "server": ["Node", "Express", "Django", "Flask"],
   "database": ["MongoDB", "MySQL", "SQLite", "Supabase", "Firebase", "Mongoose", "Sequelize"],
-  "ui": [],
+  "ui": ["Tailwind CSS"],
   "devops": [],
   "etc": []
 }
